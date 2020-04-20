@@ -24,6 +24,7 @@ namespace SQLapp.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public virtual DbSet<Tasks> Task { get; set; }
 
         public static ApplicationDbContext Create()
         {
