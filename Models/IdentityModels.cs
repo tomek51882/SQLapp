@@ -23,8 +23,13 @@ namespace SQLapp.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            
         }
-        //public virtual DbSet<Tasks> Task { get; set; }
+        public virtual DbSet<Subcategories> Subcategory { get; set; }
+        public virtual DbSet<Categories> Category { get; set; }
+        public virtual DbSet<AnswerModelNames> AnswerModelNames { get; set; }
+        public virtual DbSet<Results> Results { get; set; }
+        public virtual DbSet<Tasks> Tasks { get; set; }
 
         public static ApplicationDbContext Create()
         {
