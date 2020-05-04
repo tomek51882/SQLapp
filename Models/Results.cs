@@ -8,6 +8,7 @@ namespace SQLapp.Models
 
     public partial class Results
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
