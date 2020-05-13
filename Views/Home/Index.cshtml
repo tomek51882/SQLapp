@@ -9,6 +9,34 @@
 </div>
 
 <div class="row">
+    <div class="col-md-12">
+        @if (User.IsInRole("Administrator"))
+        {
+            <div class="card mb-3">
+                <div class="card-header">
+                    Debug
+                </div>
+                <div class="card-body">
+                    <p>Nothing interesting here yet.</p>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-12">
+        @if (User.IsInRole("Administrator") || User.IsInRole("Teacher"))
+        {
+            <div class="card">
+                <div class="card-header">
+                    Kreator zadań
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Chcesz utworzyć nowe zadanie?</h5>
+                    <p class="card-text">Kliknij tutaj aby przejść do kreatora zadań. Z nim przygotujesz nowe zadanie.</p>
+                    @Html.ActionLink("Przejdz do kreatora", "", "", new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        }
+    </div>
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
