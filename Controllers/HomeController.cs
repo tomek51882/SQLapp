@@ -26,5 +26,9 @@ namespace SQLapp.Controllers
 
             return View();
         }
+        public ActionResult Buy()
+        {
+            return View();
+        }
     }
 }
