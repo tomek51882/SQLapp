@@ -32,7 +32,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Chcesz utworzyć nowe zadanie?</h5>
                     <p class="card-text">Kliknij tutaj aby przejść do kreatora zadań. Z nim przygotujesz nowe zadanie.</p>
-                    @Html.ActionLink("Przejdz do kreatora", "", "", new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Przejdz do kreatora", "Index", "TaskCreator", routeValues: null, htmlAttributes: new { @class = "btn btn-primary" })
                 </div>
             </div>
         }

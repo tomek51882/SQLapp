@@ -10,7 +10,7 @@
     @if (User.IsInRole("Administrator"))
     {
         <h4>Panel Administracyjny</h4>
-        @Html.ActionLink("Panel", "Index", "AdminPanel",new { @class = "btn btn-primary" });
+        @Html.ActionLink("Panel", "Index", "AdminPanel", routeValues: null, htmlAttributes: new { @class = "btn btn-primary" });
     }
 
     <h4>Zmień ustawienia konta</h4>
