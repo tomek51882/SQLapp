@@ -383,6 +383,7 @@
     <Content Include="Views\TaskCreator\Index.cshtml" />
     <Content Include="Views\TaskCreator\Continue.cshtml" />
     <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\TaskCreator\Done.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
